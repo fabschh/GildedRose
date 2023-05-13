@@ -17,8 +17,8 @@ enum ItemType { LEGENDARY, CONJURED, MATURING, EXPIRING, NORMAL };
 
 class Item {
 public:
-  string name;
-  int expires_in_days;
+    string name;
+    int expires_in_days;
   int worth_item;
   Item(std::string name, int sellIn, int quality) : name(name), expires_in_days(sellIn), worth_item(quality)
   {};
